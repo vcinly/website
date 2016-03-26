@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+            font-family: 'Open Sans';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10em;
+            color: #fff;
+            background: black;
+            transition: background-color .9s linear;
+            -o-transition: background-color .9s linear;
+            -ms-transition: background-color .9s linear;
+            -moz-transition: background-color .9s linear;
+            -webkit-transition: background-color .9s linear;
+            }
+        </style>
+        <script type="text/javascript">
+            function showTime(){
+              var now = new Date();
+              var hour = now.getHours();     //获取当前时
+              var minute = now.getMinutes(); //获取当前分
+              var second = now.getSeconds(); //获取当前秒
+              minute = (minute < 10) ? "0" + minute : minute;
+              second = (second < 10) ? "0" + second : second;
+              var time = hour + ":" + minute + ":" + second
+              var color = "#" + hour + minute + second
+              var body = document.getElementById('body')
+              body.innerHTML = time
+              body.style.background = color
+            }
+            setInterval("showTime()", 1000)
+        </script>
+    </head>
+    <body id ="body">
+    </body>
+</html>
