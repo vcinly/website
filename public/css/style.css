@@ -1,0 +1,32 @@
+.main-header {
+    position: relative;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.9);
+    background: #cab693;
+    overflow: hidden;
+}
+#main_canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#nav li a, #nav2 li a {
+    background: none;
+    color: rgba(255, 255, 255, 0.4);
+}
+.ferromenu-controller {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    background: none;
+}
+.ferromenu-controller.desktop:hover, .ferromenu-controller.mobile:active {
+    background: rgba(255, 255, 255, 0.5);
+}
