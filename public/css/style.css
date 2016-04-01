@@ -30,3 +30,6 @@ i {
 .ferromenu-controller.desktop:hover, .ferromenu-controller.mobile:active {
     background: rgba(255, 255, 255, 0.5);
 }
+.disabled {
+    display: none;
+}

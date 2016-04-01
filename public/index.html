@@ -22,15 +22,17 @@
                 $.get("html/nav.html", function(data) {
                     $("#includedContent").html(data);
                 });
-                $("#nav").ferroMenu({
-                    position: "right-top",
-                    rotation: 720
-                });
+                setTimeout( function(){
+                    $("#nav").ferroMenu({
+                        position: "right-top",
+                        rotation: 720
+                    });
+                    $("#includedContent").removeClass("disabled");
+                }, 1000)
             });
         </script>
     </head>
     <body>
-        <!-- <div  w3-include-HTML="html/nav.html"></div> -->
-        <div id="includedContent"></div>
+        <div id="includedContent" class="disabled"></div>
     </body>
 </html>
