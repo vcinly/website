@@ -1,37 +1,16 @@
 <html>
     <head>
         <title>Sea of Stars</title>
-        <style type="text/css">
-            body {
-                margin: 0;
-            }
-        </style>
         <link rel="stylesheet" type="text/css" href="css/jquery.ferro.ferroMenu.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.vide.min.js"></script>
 		<script src="js/jquery.ferro.ferroMenu-1.2.3.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#nav").ferroMenu({
-                    position: "right-top",
-                    rotation: 720
-                });
-            });
-        </script>
+        <script src="js/main.js"></script>
     </head>
     <body>
-        <canvas id="main_canvas">Your browser does not support HTML5 canvas, such a shame!</canvas>
-        <ul id="nav" class="menu">
-            <li><a href="https://twitter.com/vcinly"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="http://weibo.com/1558252851"><i class="fa fa-weibo"></i></a></li>
-            <li><a href="https://github.com/vcinly"><i class="fa fa-github"></i></a></li>
-            <li><a href="http://blog.vcinly.org"><i class="fa fa-wordpress"></i></a></li>
-            <li><a href="https://instagram.com/vcinly"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="http://steamcommunity.com/id/vcinly"><i class="fa fa-steam"></i></a></li>
-            <li><a href="about"><i class="fa fa-info"></i></a></li>
-        </ul>
+        <div id="includedContent" class="disabled"></div>
         <header class="main-header js-main-header">
             <div style="width: 100%; height: 100%" data-vide-bg="mp4: img/cloud.mp4, poster: img/poster.jpg"></div>
         </header>
