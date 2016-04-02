@@ -16,11 +16,6 @@ body {
     height: 100%;
     z-index: 1;
 }
-i {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
 #nav li a, #nav2 li a {
     background: none;
     color: rgba(255, 255, 255, 0.4);
@@ -36,3 +31,8 @@ i {
 .disabled {
     display: none;
 }
+/* i { */
+/*     position: relative; */
+/*     top: 50%; */
+/*     transform: translateY(-50%); */
+/* } */

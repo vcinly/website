@@ -37,6 +37,7 @@
               var hour = now.getHours();     //获取当前时
               var minute = now.getMinutes(); //获取当前分
               var second = now.getSeconds(); //获取当前秒
+              hour = (hour < 10) ? "0" + hour : hour;
               minute = (minute < 10) ? "0" + minute : minute;
               second = (second < 10) ? "0" + second : second;
               var time = hour + ":" + minute + ":" + second
