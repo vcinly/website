@@ -6,9 +6,11 @@
         <title>Color of Time</title>
         <link rel="stylesheet" type="text/css" href="css/jquery.ferro.ferroMenu.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <style type="text/css">
-            body {
+            #body {
             font-family: 'Open Sans';
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -22,6 +24,13 @@
             -webkit-transition: background-color .9s linear;
             }
         </style>
+    </head>
+    <body>
+        <div id ="body"></div>
+        <div id="includedContent" class="disabled"></div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.ferro.ferroMenu-1.2.3.min.js"></script>
+        <script src="js/main.js"></script>
         <script type="text/javascript">
             function showTime(){
               var now = new Date();
@@ -38,11 +47,5 @@
             }
             setInterval("showTime()", 1000)
         </script>
-    </head>
-    <body id ="body">
-        <div id="includedContent" class="disabled"></div>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.ferro.ferroMenu-1.2.3.min.js"></script>
-        <script src="js/main.js"></script>
     </body>
 </html>
